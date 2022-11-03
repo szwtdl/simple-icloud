@@ -40,6 +40,17 @@ $result = $app->login([
 
 ```php 
 
+//安装包
+composer require szwtdl/simple-icloud
+//发布配置文件
+php artisan vendor:publish --provider="SimpleIcloud\ServiceProvider" 
+// 配置文件
+config/icolud.php
+// 执行登录
+$result = app('icloud')->login([
+  'username' => 'demo@gmail.com',
+  'password' => '123456',
+]);
 ```
 
 ### 二次开发 `Requests\WhatsappRequest`
@@ -49,7 +60,9 @@ $result = $app->login([
 
 namespace SimpleIcloud\Requests;
 
-class WhatsappRequest
+use SimpleIcloud\AbstractRequest;
+
+class WhatsappRequest extends AbstractRequest
 {
     protected string $path = 'v2/api/auth/reset'; //请求路径
     protected array $params = [];                 //请求参数
