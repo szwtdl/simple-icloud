@@ -1,11 +1,11 @@
 ### Apple icloud sdk
 
-[![Build Status](https://github.com/szwtdl/icloud/actions/workflows/test.yml/badge.svg)](https://github.com/szwtdl/icloud/actions)
-[![Latest Stable Version](https://poser.pugx.org/szwtdl/icloud/v/stable)](https://packagist.org/packages/szwtdl/icloud)
-[![Total Downloads](https://poser.pugx.org/szwtdl/icloud/downloads)](https://packagist.org/packages/szwtdl/icloud)
-[![Latest Unstable Version](https://poser.pugx.org/szwtdl/icloud/v/unstable)](https://packagist.org/packages/szwtdl/icloud)
-[![License](https://poser.pugx.org/szwtdl/icloud/license)](https://packagist.org/packages/szwtdl/icloud)
-[![Monthly Downloads](https://poser.pugx.org/szwtdl/icloud/d/monthly)](https://packagist.org/packages/szwtdl/icloud)
+[![Build Status](https://github.com/szwtdl/simple-icloud/actions/workflows/test.yml/badge.svg)](https://github.com/szwtdl/simple-icloud/actions)
+[![Latest Stable Version](https://poser.pugx.org/szwtdl/simple-icloud/v/stable)](https://packagist.org/packages/szwtdl/simple-icloud)
+[![Total Downloads](https://poser.pugx.org/szwtdl/simple-icloud/downloads)](https://packagist.org/packages/szwtdl/simple-icloud)
+[![Latest Unstable Version](https://poser.pugx.org/szwtdl/simple-icloud/v/unstable)](https://packagist.org/packages/szwtdl/simple-icloud)
+[![License](https://poser.pugx.org/szwtdl/simple-icloud/license)](https://packagist.org/packages/szwtdl/simple-icloud)
+[![Monthly Downloads](https://poser.pugx.org/szwtdl/simple-icloud/d/monthly)](https://packagist.org/packages/szwtdl/simple-icloud)
 
 ### 安装
 
