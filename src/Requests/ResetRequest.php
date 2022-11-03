@@ -1,5 +1,12 @@
 <?php
 
+declare(strict_types=1);
+/**
+ * This file is part of szwtdl/simple-icloud
+ * @link     https://www.szwtdl.cn
+ * @contact  szpengjian@gmail.com
+ * @license  https://github.com/szwtdl/simple-icloud/blob/master/LICENSE
+ */
 namespace SimpleIcloud\Requests;
 
 use SimpleIcloud\AbstractRequest;
@@ -7,7 +14,9 @@ use SimpleIcloud\AbstractRequest;
 class ResetRequest extends AbstractRequest
 {
     protected string $path = 'v2/api/auth/reset';
+
     protected array $params = [];
+
     protected $client;
 
     public function __construct($client, $params = [])
@@ -18,7 +27,7 @@ class ResetRequest extends AbstractRequest
 
     public function getData(): array
     {
-        //这里可以处理数据
+        // 这里可以处理数据
         return parent::getData();
     }
 }

@@ -1,5 +1,12 @@
 <?php
 
+declare(strict_types=1);
+/**
+ * This file is part of szwtdl/simple-icloud
+ * @link     https://www.szwtdl.cn
+ * @contact  szpengjian@gmail.com
+ * @license  https://github.com/szwtdl/simple-icloud/blob/master/LICENSE
+ */
 namespace SimpleIcloud;
 
 abstract class AbstractRequest
@@ -18,7 +25,7 @@ abstract class AbstractRequest
             return [
                 'code' => 202,
                 'msg' => $exception->getMessage(),
-                'data' => []
+                'data' => [],
             ];
         }
     }

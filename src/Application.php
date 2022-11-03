@@ -1,7 +1,13 @@
 <?php
 
+declare(strict_types=1);
+/**
+ * This file is part of szwtdl/simple-icloud
+ * @link     https://www.szwtdl.cn
+ * @contact  szpengjian@gmail.com
+ * @license  https://github.com/szwtdl/simple-icloud/blob/master/LICENSE
+ */
 namespace SimpleIcloud;
-
 
 use GuzzleHttp\Client;
 
@@ -28,9 +34,10 @@ use GuzzleHttp\Client;
 class Application
 {
     protected Client $client;
+
     protected array $options = [
         'base_uri' => 'http://localhost:8080',
-        'timeout' => '5.0'
+        'timeout' => '5.0',
     ];
 
     public function __construct(array $options = [])
@@ -40,15 +47,14 @@ class Application
 
     public function __call($name, $arguments)
     {
-        $className = "SimpleIcloud\\Requests\\" . $name . "Request";
-        if (!class_exists($className)) {
+        $className = 'SimpleIcloud\\Requests\\' . $name . 'Request';
+        if (! class_exists($className)) {
             return [
                 'code' => 202,
-                'msg' => "Error ClassName " . $name . "Request not ",
-                'data' => []
+                'msg' => 'Error ClassName ' . $name . 'Request not ',
+                'data' => [],
             ];
         }
         return (new $className($this->client, array_shift($arguments)))->getData();
     }
-
 }
